@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TN college eligiblity checker</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <h1 id="mainheading">Tamil Nadu Engineering Admission Assistant</h1>
+            <h4 id="myh4">Calculate your engineering cut-off and check eligibility insights instantly.</h4>
+            <h4>Enter your marks</h4>
+
+            <form action="#" id="myform" autocomplete="on" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="maths">Mathematics :</label>
+                    <input type="number" id="maths" required name="maths">
+                </div>
+
+                <div class="form-group">
+                    <label for="physics">Physics :</label>
+                    <input type="number" id="physics" required name="physics">
+                </div>
+
+                <div class="form-group">
+                    <label for="chemistry">Chemistry :</label>
+                    <input type="number" id="chemistry" required name="chemistry">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="submit" onclick="Calculate()">Calculate</button>
+                    <button type="reset" id="reset" onclick="document.getElementById('finalresult').textContent=''">Reset</button>
+                </div>
+            </form>
+            <h2 id="finalresult"></h2>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
