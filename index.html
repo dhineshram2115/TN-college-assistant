@@ -34,11 +34,14 @@
                 </div>
 
                 <div class="button-group">
-                    <button type="submit" id="submit" onclick="Calculate()">Calculate</button>
-                    <button type="reset" id="reset" onclick="document.getElementById('finalresult').textContent=''">Reset</button>
+                    <button type="submit" id="submit">Calculate</button>
+                    <button type="reset" id="reset">Reset</button>
                 </div>
             </form>
-            <h2 id="finalresult"></h2>
+            <section id="results" class="results" aria-live="polite" hidden>
+                <h2 id="finalresult"></h2>
+                <div id="college-results"></div>
+            </section>
         </div>
     </main>
 

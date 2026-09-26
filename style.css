@@ -1,8 +1,10 @@
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 16px;
+    box-sizing: border-box;
 }
 
 body {
@@ -19,6 +21,54 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     max-width: 500px;
     width: 100%;
+}
+
+.results {
+    margin-top: 28px;
+    border-top: 1px solid #dbe2f0;
+    padding-top: 8px;
+}
+
+.results h2 {
+    font-size: 1.35rem;
+}
+
+.results h3 {
+    color: #16245c;
+    margin-bottom: 12px;
+}
+
+.college-list {
+    display: grid;
+    gap: 10px;
+}
+
+.college-item {
+    display: grid;
+    gap: 4px;
+    padding: 12px;
+    border: 1px solid #dbe2f0;
+    border-left: 4px solid rgb(38, 0, 255);
+    border-radius: 6px;
+    background: #f8faff;
+}
+
+.college-item span,
+.college-item small,
+.result-note {
+    color: #596274;
+    font-size: 0.88rem;
+}
+
+.result-note {
+    line-height: 1.45;
+    margin-bottom: 0;
+}
+
+@media (max-width: 560px) {
+    .container {
+        padding: 28px 22px;
+    }
 }
 
 .form-group {
